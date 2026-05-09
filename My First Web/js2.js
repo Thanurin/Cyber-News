@@ -7,6 +7,3 @@ document.getElementById('file_iso').addEventListener('click', function(){
 document.getElementById('virtualbox').addEventListener('click', function(){
     window.location.href="https://www.virtualbox.org/wiki/Downloads"
 })
-document.getElementById('youtube').addEventListener('click', function(){
-    window.location.href="https://www.youtube.com/@rinthanu526"
-})
