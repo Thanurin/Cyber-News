@@ -11,9 +11,7 @@ document.getElementById('orderForm').addEventListener('submit', async function (
     e.preventDefault();
 
     const facebookName = document.getElementById('facebookName').value;
-
     const phoneNumber = document.getElementById('phoneNumber').value;
-
     const location = document.getElementById('location').value;
 
     const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
@@ -36,42 +34,33 @@ ${items.join(", ")}
 `;
 
     try {
+        await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                chat_id: CHAT_ID,
+                text: message
+            })
+        });
 
-        const response = await fetch(
-            `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`,
-            {
-                method: "POST",
+        await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                chat_id: CHAT_ID2,
+                text: message
+            })
+        });
 
-                headers: {
-                    "Content-Type": "application/json"
-                },
-
-                body: JSON.stringify({
-                    chat_id: CHAT_ID,
-                    text: message
-                })
-            }
-        );
-
-        const data = await response.json();
-
-        console.log(data);
-
-        if (data.ok) {
-
-            alert("Sent successfully!");
-
-        } else {
-
-            alert("Telegram Error!");
-            console.log(data);
-
-        }
+        alert("Sent successfully!");
 
     } catch (error) {
 
         console.error(error);
-
         alert("Internet/Error!");
 
     }
