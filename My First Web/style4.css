@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    background-position: center;
+    color: black;
+    font-family: 'Noto Sans Khmer', sans-serif;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+input {
+    font-family: 'Noto Sans Khmer', sans-serif;
+}
+
+ul {
+    font-size: 15px;
+    color: white;
+    text-align: left;
+}
+
+#complete {
+    border: 3px solid black;
+    border-radius: 50px;
+    box-shadow: 5px 5px darkgray;
+    height: 1050px;
+    width: 850px;
+    margin: 50px auto;
+    transition: 0.3s;
+    text-align: center;
+}
+
+#complete:hover {
+    border: 3px solid black;
+    box-shadow: 5px 5px darkgray;
+    height: 1050px;
+    width: 900px;
+}
+
+.box {
+    height: 25px;
+    width: 400px;
+    margin-left: 100px;
+    border-radius: 50px;
+    border: none;
+    padding: 5px 10px;
+    background-color: darkgray;
+}
+.box:focus {
+    outline: none;
+    box-shadow: 0 0 5px darkgray;
+}
+.text {
+    margin-top: 100px;
+    font-size: 15px;
+    margin-right: 500px;
+    color: black;
+}
+#Location {
+    margin-top: 100px;
+    font-size: 15px;
+    margin-right: 550px;
+}
+#location {
+    font-size: 15px;
+}
+#delivery {
+    font-size: 15px;
+    color: white;
+    margin-right: 740px;
+}
+
+#qr {
+    height: 200px;
+    margin-top: 25px;
+    border-radius: 35px;
+    margin-right: 1000px;
+}
+
+#back {
+    background-color: darkgray;
+    color: white;
+    border-radius: 35px;
+    font-size: 15px;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 80px;
+    margin-bottom: 100%;
+    margin-left: 80px;
+}
+
+#back:hover {
+    background-color: gray;
+    font-size: 18px;
+}
+
+#send {
+    background-color: darkgray;
+    color: white;
+    border-radius: 35px;
+    font-size: 15px;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 80px;
+    margin-bottom: 100%;
+    margin-left: 80px;
+}
+#send:hover {
+    background-color: gray;
+    font-size: 18px;
+}
+#text {
+    margin-right: 700px;
+}
+label {
+    cursor: default;
+    color: black;
+    margin-left: 50px;
+}

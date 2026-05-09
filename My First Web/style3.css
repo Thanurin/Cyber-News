@@ -1,0 +1,85 @@
+body {
+    background-image: url(./img/Cybersecurity\ world\ in\ focus.png);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+    body :nth-child(1) { animation-delay: 0.2s; }
+    body :nth-child(2) { animation-delay: 0.4s; }
+    body :nth-child(3) { animation-delay: 0.6s; }
+    body :nth-child(4) { animation-delay: 0.8s; }
+    body :nth-child(5) { animation-delay: 1s; }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+#head {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+#back {
+    background-color: blue;
+    transition: 0.3s;
+    font-size: 25px;
+    height: auto;
+    width: auto;
+    color: white;
+    border-radius: 35px 25px;
+    cursor: pointer;
+}
+#back:hover {
+    background-color: lightblue;
+    font-size:30px;
+    height: auto;
+    width: auto;
+    border-radius: 25px 35px;
+}
+.image {
+    height: 550px;
+    width: auto;
+}
+.text {
+    color: white;
+    font-size: 25px;
+}
+.question {
+    color: white;
+    font-size: 25px;
+}
+.steps {
+    color: white;
+    font-size: 25px;
+}
+.download {
+    background-color: darkgray;
+    color: white;
+    transition: 0.3s;
+    font-size: 25px;
+    width: auto;
+    height: auto;
+    border-radius: 35px 35px;
+    cursor: pointer;
+}
+.download:hover {
+    background-color: gray;
+    font-size: 28px;
+    border-radius: 45px 35px;
+}
+b {
+    color: white;
+}
+footer {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 35px 35px;
+    background-color: gray;
+}
