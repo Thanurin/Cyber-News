@@ -22,7 +22,10 @@ body {
 input {
     font-family: 'Noto Sans Khmer', sans-serif;
 }
-
+::placeholder {
+    color: white;
+    opacity: 1;
+}
 ul {
     font-size: 15px;
     color: white;
