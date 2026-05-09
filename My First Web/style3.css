@@ -1,5 +1,5 @@
 body {
-    background-image: url(./img/Cybersecurity\ world\ in\ focus.png);
+    background-color: black;
     opacity: 0;
     transform: translateY(50px);
     animation: fadeInUp 1s ease-out forwards;
