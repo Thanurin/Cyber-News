@@ -8,5 +8,5 @@ document.getElementById('virtualbox').addEventListener('click', function(){
     window.location.href="https://www.virtualbox.org/wiki/Downloads"
 })
 document.getElementById('youtube').addEventListener('click', function(){
-    window.location.href="https://youtub.be/NMtW4SDT5T4?si=75OfkwCEqSB-4hOf"
+    window.location.href="https://www.youtube.com/@rinthanu526"
 })
