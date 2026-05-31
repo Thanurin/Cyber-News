@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cyber-news",
+  "compatibility_date": "2026-05-31",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "My First Web"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
